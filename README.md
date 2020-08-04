@@ -1,18 +1,19 @@
-# workbench
+# vue.js Optimized Mobile Desktop Images
+This project is uses Vue Components to serve images that are optimized for mobile and desktop devices.  More info in this [medium article](https://medium.com/swlh/vue-js-mobile-desktop-optimized-images-7b93f2afc43b)
 
 ## Project setup
 ```
-npm install
+yarn install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+yarn serve
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+yarn build
 ```
 
 ### Customize configuration

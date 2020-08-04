@@ -1,12 +1,25 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <h1>{{ getIsMobile ? 'Mobile' : 'Desktop' }}</h1>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+import isMobile from '@/utils/isMobile'
+
+export default {
+  name: 'App',
+
+  computed: {
+    getIsMobile() {
+      return isMobile()
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
@@ -20,7 +33,8 @@
 #nav {
   padding: 30px;
 
-  a {
+  h1 {
+    font-size: 3em;
     font-weight: bold;
     color: #2c3e50;
 
